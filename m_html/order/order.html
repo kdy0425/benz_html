@@ -1,0 +1,289 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body class="gray">
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+				<a href="javascript:;" class="btnBack">주문하기</a>
+				</div>
+			</header>
+
+			<div class="orderPage">            
+                <div class="order">       
+                    <div class="box first">
+                        <div class="productInfo">
+                            <h2 class="boxTitle">01. 상품정보</h2>
+                            <ul class="orderProductList">
+                                <li>
+                                    <a href="javascript:;" class="clearFix">
+                                        <div class="pic" style="background:url('../../m_assets/images/content/prd_img.png') no-repeat center; background-size:cover;"></div>
+                                        <div class="info">
+                                            <p class="name">퀸메이드 믹서기 쥬시 블렌더 QBL-3000P</p>
+                                            <dl>
+												<dt>옵션 : </dt>
+                                                <dd>화이트</dd>
+                                                <dt>수량 : </dt>
+                                                <dd>1개</dd>
+                                                <dt>합계 : </dt>
+                                                <dd>155,900 원</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="clearFix">
+                                        <div class="pic" style="background:url('../../m_assets/images/content/prd_img.png') no-repeat center; background-size:cover;"></div>
+                                        <div class="info">
+                                            <p class="name">티디팩토리 400타입 정수기받침대</p>
+                                            <dl>
+                                                <dt>수량 : </dt>
+                                                <dd>1개</dd>
+                                                <dt>합계 : </dt>
+                                                <dd>35,000 원</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box buyerInfo">
+                        <h2 class="boxTitle">02. 주문자정보</h2>
+                        <div class="infoTbl formTbl">
+                            <table>
+                                <colgroup>
+                                    <col style="width:22%;">
+                                    <col style="width:78%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>보내는 분</th>
+                                        <td>
+                                            <div>
+                                                <input type="text" id="" name="" value="윤동희">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰</th>
+                                        <td>
+                                            <div>
+                                                <input type="tel" id="" name="" value="01020201010">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일</th>
+                                        <td>
+                                            <div>
+                                                <input type="email" id="" name="" value="jungbumtr@naver.com">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>주소</th>
+                                        <td>
+                                            <div>
+                                                <input type="email" id="" name="" value="서울특별시 송파구 신천동 17">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>나머지주소</th>
+                                        <td>
+                                            <div>
+                                                <input type="email" id="" name="" value="잠심 파크리오아파트 107동 202호">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>요청사항</th>
+                                        <td>
+                                            <div>
+                                                <textarea name="" id="">요청사항</textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+					
+                    <div class="box usePoint">
+                        <h2 class="boxTitle">03. 적립포인트 사용</h2>
+                        <div class="infoTbl formTbl">
+                           <div class="my_point clearfix">
+								<strong class="tit">적립 포인트 잔액</strong>
+								<span class="point">2,000 P</span>
+						   </div>
+						   <div class="point_form clearfix">
+							<input type="tel" value="0">
+							<button type="button" class="btn">전액사용</button>
+						   </div>
+                        </div>
+                    </div>
+					
+                    <div class="box usePoint">
+                        <h2 class="boxTitle">04. 할인쿠폰적용</h2>
+                        <div class="infoTbl formTbl">
+                           <select name="" id="">
+							<option value="">쿠폰선택</option>
+						   </select>
+                        </div>
+                    </div>
+
+                    <div class="box priceInfo">
+                        <h2 class="boxTitle">03. 결제금액</h2>
+                        <dl class="top clearFix">
+                            <dt>주문 금액</dt>
+                            <dd>
+                                <strong>190,900</strong>
+                            </dd>
+                        </dl>
+                       <dl class="bottom clearFix">
+                            <dt>배송비</dt>
+                            <dd>
+                                <strong>+ 0</strong>
+                            </dd>
+                        </dl>
+                       <dl class="bottom clearFix">
+                            <dt>쿠폰할인</dt>
+                            <dd>
+                                <strong>- 0</strong>
+                            </dd>
+                        </dl>
+                       <dl class="bottom clearFix">
+                            <dt>포인트사용</dt>
+                            <dd>
+                                <strong>- 0</strong>
+                            </dd>
+                        </dl>
+						 
+                        <dl class="finPrice clearFix">
+                            <dt>최종 결제금액</dt>
+                            <dd>
+                                <strong>190,900</strong>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="box paymentType">
+                        <h2 class="boxTitle">04. 결제 수단</h2>
+                        <ul>
+                            <li>
+                                <input type="radio" id="payment01" name="payment">
+                                <label for="payment01">간편카드결제</label>
+                                <select name="" id="">
+                                    <option value="">카드선택</option>
+                                    <option value="">-</option>
+                                    <option value="">-</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="radio" id="payment02" name="payment">
+                                <label for="payment02">신용카드</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="payment03" name="payment">
+                                <label for="payment03">가상계좌</label>
+                            </li>
+                        </ul>
+                        <!-- 실시간 계좌이체 선택시 노출 -->
+                        <div class="bankTransfer clearFix">
+                            <strong class="title">현금영수증</strong>
+                            <div class="group">
+                                <div class="choiceRow receipt clearFix">
+                                    <input type="radio" id="receipt01" name="receipt">
+                                    <label for="receipt01">신청하기</label>
+                                    <input type="radio" id="receipt02" name="receipt">
+                                    <label for="receipt02">신청안함</label>
+                                </div>
+                                <div class="choiceRow receiptType clearFix">
+                                    <input type="radio" id="receiptType01" name="receiptType">
+                                    <label for="receiptType01">개인소득 공제용</label>
+                                    <input type="radio" id="receiptType02" name="receiptType">
+                                    <label for="receiptType02">사업자증빙용</label>
+                                </div>
+                                <!-- 개인소득 공제용 선택시 노출 -->
+                                <div class="individual">
+                                    <div class="row">
+                                        <select name="" id="">
+                                            <option value="">휴대폰번호</option>
+                                            <option value="">-</option>
+                                            <option value="">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <input type="tel" id="" name="" placeholder="휴대폰번호 입력">
+                                    </div>
+                                </div>
+                                <!-- 사업자증빙용 선택시 노출 -->
+                                <div class="business">
+                                    <div class="row">
+                                        <input type="tel" id="" name="" placeholder="사업자 등록번호 입력">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="termsAgree clearFix">
+                            <div class="agree">
+                                <input type="checkbox" id="termsAgree" name="termsAgree">
+                                <label for="termsAgree">개인정보 수집 이용 동의(필수)</label>
+                            </div>
+                            <a href="javascript:;" class="btnView">약관보기</a>
+                        </div>
+                    </div>
+
+                    <div class="fixBtns">
+                        <div class="inner">
+							<a href="javascript:;" class="btn bBlue">결제하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+ <script>
+        $(function(){
+            //결제 구분
+            $('input[name="payment"]').on('change', function(){
+                var choiceType = $(this).attr('id');
+                $('.bankTransfer, .receipt, .individual, .business').hide();
+                if(choiceType == 'payment02' || choiceType == 'payment03'){
+                    $('.bankTransfer').show();
+                    $('.receipt').show();
+                }
+            });
+            $('input[name="receipt"]').on('change', function(){
+                var choiceType = $(this).attr('id');
+                $('.receiptType, .individual, .business').hide();
+                $('input[name="receiptType"]').prop('checked','');
+                if(choiceType == 'receipt01'){
+                    $('.receiptType').show();
+                }
+            });
+            $('input[name="receiptType"]').on('change', function(){
+                var choiceType = $(this).attr('id');
+                $('.individual, .business').hide();
+                if(choiceType == 'receiptType01'){
+                    $('.individual').show();
+                }else{
+                    $('.business').show();
+                }
+            });
+        })
+    </script>
+</body>
+</html>	

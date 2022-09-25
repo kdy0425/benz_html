@@ -1,0 +1,83 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">회원탈퇴</a>
+				</div>
+			</header>
+			
+			<div class="secessionView">   
+				<div class="formBox">
+					<h2 class="title">누샵 탈퇴하기</h2>
+					<div class="caution">
+						<strong>주의사항</strong>
+						<ul>
+							<li>- 회원 탈퇴 시 모든 정보가 삭제됩니다.</li>
+							<li>- 모든 회원의 기록은 모두 소멸됩니다.</li>
+							<li>- 탈퇴 후 동일 아이디로 신규가입이 30일 간 제한됩니다.</li>
+						</ul>
+					</div>
+					<div class="reason">
+						<p>탈퇴 사유를 말씀해 주세요.</p>
+						<ul>
+							<li>
+								<input type="radio" id="secessionReason01" name="secessionReason">
+								<label for="secessionReason01">원하는 기능이나 회원이 없어서</label>
+							</li>
+							<li>
+								<input type="radio" id="secessionReason02" name="secessionReason">
+								<label for="secessionReason02">서비스의품질이 기대 이하라서</label>
+							</li>
+							<li>
+								<input type="radio" id="secessionReason03" name="secessionReason">
+								<label for="secessionReason03">개인정보를 유출하고 싶지 않아서</label>
+							</li>
+							<li>
+								<input type="radio" id="secessionReason04" name="secessionReason">
+								<label for="secessionReason04">직접입력</label>
+								<div class="reason_leave" style="display:none;">
+									<textarea name="" id="" placeholder="사유를 입력해주세요."></textarea>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="inputPassword">
+						<p>탈퇴할 계정의 비밀번호를 입력해주세요.</p>
+						<input type="password" id="" name="" placeholder="비밀번호 입력">
+					</div>
+					<div class="fixBtns">
+						<div class="inner">
+							<a href="javascript:;" class="btn">탈퇴하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+
+<script type="text/javascript">
+$('input[name="secessionReason"]').change(function(){
+	if($('#secessionReason04').is(':checked')){
+		$('.reason_leave').show();
+	}else{
+		$('.reason_leave').hide();
+	}
+});
+</script>
+</body>
+</html>	

@@ -1,0 +1,151 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body class="gray">
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">장바구니</a>
+				</div>
+			</header>
+
+			<div class="orderPage">            
+                <div class="cart">
+					<div class="box first">
+                        <ul class="infoList">
+							<li><span>* 장바구니 상품은 최대 30일간 저장됩니다.</span></li>
+							<li>* 가격, 옵션 등 정보가 변경된 경우 주문이 불가할수 있습니다.</li>
+							<li>* 주문수량을 꼭 다시 확인해 주시기 바랍니다. </li>
+                        </ul>
+                    </div>
+                    <div class="box inCartList label_control">
+                        <div class="allCheckRow clearFix">
+                            <div class="cCheck">
+                                <label class="design_check all"><input type="checkbox" id="checkAll" name="prodListCheck">전체선택하기</label>
+                            </div>
+							<button type="button" class="btnDeleteAll">전체삭제하기</button>
+                        </div>
+                        <ul class="productList">
+                            <li>
+                                <div class="checkRow clearFix">
+                                    <div class="cCheck">
+                                        <label class="ellipsis design_check"><input type="checkbox" id="prodCheck01" name="prodListCheck">Brick M/Desert Beige</label>
+                                    </div>
+                                    <button type="button" class="btnDelete" title="삭제"></button>
+                                </div>
+                                <div class="prodPrice clearFix">
+                                    <div class="pic" style="background:url('../../m_assets/images/content/prd_img.png') no-repeat center; background-size:cover;"></div>
+                                    <div class="info">
+                                        <div class="option">핑크</div>
+                                        <div class="price">
+                                            <strong>155,900</strong>
+                                        </div>
+                                    </div>
+                                    <div class="controlCnt clearFix">
+                                        <button type="button" class="btn minus" title="낮춤"></button>
+                                        <span class="hopeTxt">2</span>
+                                        <button type="button" class="btn plus" title="높임"></button>
+                                    </div>
+                                </div>
+                                <div class="resultPrice">
+                                    <dl class="clearFix">
+                                        <dt>합계 금액</dt>
+                                        <dd>155,900</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkRow clearFix">
+                                    <div class="cCheck">
+                                        <label class="ellipsis design_check"><input type="checkbox" id="prodCheck02" name="prodListCheck">숲 속 토끼 카드 지갑 </label>
+                                    </div>
+                                    <button type="button" class="btnDelete" title="삭제"></button>
+                                </div>
+                                <div class="prodPrice clearFix">
+                                    <div class="pic" style="background:url('../../m_assets/images/content/prd_img.png') no-repeat center; background-size:cover;"></div>
+                                    <div class="info">
+                                        <div class="option">화이트</div>
+                                        <div class="price">
+                                            <strong>35,000</strong>
+                                        </div>
+                                    </div>
+                                    <div class="controlCnt clearFix">
+                                        <button type="button" class="btn minus" title="낮춤"></button>
+                                        <span class="hopeTxt">1</span>
+                                        <button type="button" class="btn plus" title="높임"></button>
+                                    </div>
+                                </div>
+                                <div class="resultPrice">
+                                    <dl class="clearFix">
+                                        <dt>합계 금액</dt>
+                                        <dd>35,000</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="box totalPrice">
+                        <dl class="top clearFix">
+                            <dt>주문 금액</dt>
+                            <dd>
+                                <strong>190,900</strong>
+                                <span>원</span>
+                            </dd>
+                        </dl>
+                        <dl class="bottom clearFix">
+                            <dt>배송비</dt>
+                            <dd>
+                                <strong>0</strong>
+                                <span>원</span>
+                            </dd>
+                        </dl>
+                        <dl class="finPrice clearFix">
+                            <dt>결제 예정금액</dt>
+                            <dd>
+                                <strong class="cReddish">190,900</strong>
+                                <span class="cReddish">원</span>
+                            </dd>
+                        </dl>
+                    </div>
+
+					 <div class="fixBtns two clearFix">
+						<a href="javascript:;" class="btn cart">계속쇼핑하기</a>
+						<a href="javascript:;" class="btn orange">주문하기</a>
+					</div>   
+                  
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+ <script>
+        $(function(){
+            //주문 수량
+            $('.controlCnt .btn').on('click', function(){
+                var $hopeNum = $(this).siblings('.hopeTxt');
+                var nowNum = Number($hopeNum.text());
+                if($(this).hasClass('minus')){
+                    if(nowNum > 1){
+                        $hopeNum.text(nowNum -= 1);
+                    } else{
+						alert('최소 수량은 1개입니다.');
+						return false;
+					}      
+                }else{
+                    $hopeNum.text(nowNum += 1);
+                }
+            });
+        })
+    </script>
+</body>
+</html>	

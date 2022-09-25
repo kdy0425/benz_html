@@ -1,0 +1,77 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+
+	<!-- content -->
+	<div id="content">
+		<header id="header" class="inMember noborder">
+			<div class="inner">
+				<a href="javascript:;" class="btnBack">후기쓰기</a>
+				<a href="javascript:;" class="btnEtc black">등록완료</a>
+			</div>
+		</header>
+		<div class="mypPage inquiry new_write review_write">
+			<div class="formBox">
+				<div class="form_alert3">후기(최소 20자 이상)작성하시면 <strong>100 P</strong> 씩 적립해 드립니다. 
+				<span>상품과 관련이 없는 부적합한 후기는 관리자에 의해 삭제될 수 있습니다. <br/>* 삭제되는 경우 적립되었던 포인트는 회수됩니다.</span></div>
+				<div class="row">
+					<strong class="tit mgb10">후기종류 선택</strong>
+					<div class="label_control">
+						<label class="design_radio style2"><input type="radio" name="review_type" data-role="none">긍정후기</label>
+						<label class="design_radio style2"><input type="radio" name="review_type" data-role="none">부정후기</label>
+					</div>
+				</div>
+				<div class="row">
+					<strong class="tit mgb10">평점 선택</strong>
+					<input type="hidden" class="star_ip" value="0">
+					<div class="stars_reg clearfix">
+						<a href="javascript:;" class="point point0_5" data-rel="0.5">0.5점</a>
+						<a href="javascript:;" class="point point1" data-rel="1">1점</a>
+						<a href="javascript:;" class="point point1_5" data-rel="1.5">1.5점</a>
+						<a href="javascript:;" class="point point2" data-rel="2">2점</a>
+						<a href="javascript:;" class="point point2_5" data-rel="2.5">2.5점</a>
+						<a href="javascript:;" class="point point3" data-rel="3">3점</a>
+						<a href="javascript:;" class="point point3_5" data-rel="3.5">3.5점</a>
+						<a href="javascript:;" class="point point4" data-rel="4">4점</a>
+						<a href="javascript:;" class="point point4_5" data-rel="4.5">4.5점</a>
+						<a href="javascript:;" class="point point5" data-rel="5">5점</a>
+					</div>
+					<script>
+					$('.stars_reg .point').click(function(){
+						var point = $(this).attr('data-rel');
+						var pointIndex = $(this).index() + 1;
+						$('.star_ip').val(point);
+						$('.stars_reg .point').removeClass('active');
+						$('.stars_reg .point:nth-child(-n+'+ pointIndex +')').addClass('active');
+						console.log($('.star_ip').val());
+					});
+					</script>
+				</div>
+				<div class="row">
+					<strong class="tit">후기내용 작성</strong>
+					<textarea name="" id="" placeholder="후기내용을 작성해주세요." data-role="none" style="font-size:13px;height:200px;"></textarea>
+				</div>
+				<div class="row file_upload review_photo">
+					<strong class="tit">이미지 첨부 <span class="stit">*필수항목이 아닙니다.</span></strong>
+					<label class="mf_photo"><input type="file"><span class="photo_box img_upcnt"><img src="" alt="" style="display:none;"></span></label>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- //content -->
+
+</div>
+<!-- //wrap -->
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	

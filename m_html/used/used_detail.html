@@ -1,0 +1,141 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">중고거래 상세</a>
+					<div class="hd_btns">
+						<a href="javascript:;" class="btn heart" onclick="$(this).toggleClass('active')">좋아요</a>
+						<a href="javascript:;" class="btn share" onclick="layerShow('shareBox')">공유하기</a>
+					</div>
+
+						<!-- 공유하기 레이어 -->
+						<div class="popupContent shareBox" style="display:none;">
+							<div class="dim"></div>
+							<div class="share_cnt">
+  								<span class="subject">벤츠 C-클래스 W205 C220 d 아방가르드</span>
+								<ul>
+									<li><a href="javascript:;" class="f">페이스북</a></li>
+									<li><a href="javascript:;" class="t">트위터</a></li>
+									<li><a href="javascript:;" class="k">카카오톡</a></li>
+									<li><a href="javascript:;" class="s">문자</a></li>
+									<li><a href="javascript:;" class="l">링크</a></li>
+								</ul>
+							</div>
+							<a href="javascript:;" title="닫기" class="btnClosePopup" onclick="layerHide('shareBox')"></a>
+						</div>
+
+				</div>
+			</header>
+			
+			 <div class="used_detail">
+				<div class="img_slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../../m_assets/images/content/used_thum.png" alt=""></div>
+							<div class="swiper-slide"><img src="../../m_assets/images/content/used_thum.png" alt=""></div>
+							<div class="swiper-slide"><img src="../../m_assets/images/content/used_thum.png" alt=""></div>
+							<div class="swiper-slide"><img src="../../m_assets/images/content/used_thum.png" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<script>
+					var swiper = new Swiper('.img_slider .swiper-container', {
+					  pagination: {
+						el: '.img_slider .swiper-pagination',
+						clickable: true,
+					  },
+						loop:true,
+					});
+					</script>
+				<div class="used_info">
+					<h2>벤츠 CLS-클래스 C257 CLS 300d AMG Line</h2>
+					<div class="price">6,200 만원</div>
+					<div class="info_table">
+						<div class="item"><strong>년식</strong> 18/01식</div>
+						<div class="item"><strong>주행거리</strong> 53,123KM</div>
+						<div class="item"><strong>연료</strong> 디젤</div>
+						<div class="item"><strong>지역</strong> 서울</div>
+					</div>
+				</div>
+				
+				<hr class="devide_line">
+
+				<div class="used_box">
+					<div class="title">옵션정보</div>
+					<div class="content">
+						<div class="option">
+							<div class="tit">외관/내장</div>
+							<div class="cnt">선루프 / 헤드램프(LED) / 전동접이 사이드 미러 / 알루미늄 휠 / 패들 시프트 / 파워 도어록 / 파워 윈도우</div>
+						</div>
+						<div class="option">
+							<div class="tit">안전</div>
+							<div class="cnt">에어백 (운전석,동승석) / 브레이크 잠김 방지 (ABS) / 미끄럼 방지 (TCS) / 차체자세 제어창지 (ESC) / 주차 감지 센서 (전방,후방) / 후방 카메라</div>
+						</div>
+						<div class="option">
+							<div class="tit">편의/멀티미디어</div>
+							<div class="cnt">크루즈 컨트롤 / 헤드업 디스플레이 / 전자식 주차브레이크 / 자동에어컨 / 스마트키 / 무선도어 잠금장치 / 레인센서 / 오토 라이트 / 내비게이션 앞좌석 AV모니터 / 블루투스 / CD 플레이어 / USB 단자</div>
+						</div>
+						<div class="option">
+							<div class="tit">시트</div>
+							<div class="cnt">가죽시트 / 전동시트 / 열선시트 / 메모리 시트</div>
+						</div>
+						<div class="option">
+							<div class="tit">기타옵션 </div>
+							<div class="cnt">블랙박스 / 버튼시동키</div>
+						</div>
+					</div>
+				</div>
+
+				<hr class="devide_line">
+
+				<div class="used_box">
+					<div class="title">판매자 설명</div>
+					<div class="content">
+						안녕하세요중고차 전문딜러 우주자동차매매상사
+						최상현 이사입니다.<br/>
+						현재 고객님께서 보시는 차량은 100% 실매물임을 이름을걸고 약속드립
+						니다. <br/><br/>
+
+						본차량은 개인 위탁차량으로 별도의 수수료가 발생하지 않습니다.<br/>
+
+						차량은 압구정 오토원에서 보실 수 있습니다.<br/>
+						차량시승도가능하고 정비업소에서 차량상태 확인도 가능합니다.<br/>
+						연락주시면 친절하고 상세하게 설명드리도록 하겠습니다.  
+					</div>
+				</div>
+
+				<hr class="devide_line">
+
+				<div class="used_box">
+					<div class="title">판매자 설명</div>
+					<div class="content">
+						<div class="info_table">
+							<div class="item"><strong>이름</strong> 윤동희</div>
+							<div class="item"><strong>연락처</strong> 010-1234-1234</div>
+							<div class="item full"><strong>이메일</strong> aaa@naver.com</div>
+							<div class="item full"><strong>거래지역</strong> 서울</div>
+						</div>
+					</div>
+				</div>
+
+
+			 </div>
+		 </div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	

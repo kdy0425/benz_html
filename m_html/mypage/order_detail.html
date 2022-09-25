@@ -1,0 +1,258 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">주문 상세정보</a>
+				</div>
+			</header>
+			<div class="mypPage orderDetail">
+				<div class="box first orderSummary">
+					<dl>
+						<dt>주문번호</dt>
+						<dd>180826-1020301</dd>
+					</dl>
+					<span class="prodStat preparing">상품준비중</span>
+
+					<!-- <span class="prodStat ing">배송중</span>
+					<span class="prodStat preparing">상품준비중</span>
+					<span class="prodStat orderComplete">주문완료</span>
+					<span class="prodStat cancelComplete">취소완료</span> -->
+				</div>
+				<!-- 상품정보 -->
+				<div class="box">
+					<h2 class="boxTitle">01. 상품정보</h2>
+					<ul class="prodList">
+						<li>
+							<a href="javascript:;" class="clearFix">
+								<div class="pic" style="background:url('../../m_assets/images/content/prd_img.png') no-repeat center; background-size:cover;"></div>
+								<div class="info">
+									<p class="name">Brick M/Desert Beige</p>
+									<dl>
+										<dt>옵션 : </dt>
+										<dd>핑크</dd>
+										<dt>수량 : </dt>
+										<dd>1개</dd>
+										<dt>합계 : </dt>
+										<dd>5,500 원</dd>
+									</dl>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="clearFix">
+								<div class="pic" style="background:url('../../m_assets/images/content/prd_img.png') no-repeat center; background-size:cover;"></div>
+								<div class="info">
+									<p class="name">숲 속 토끼 카드 지갑</p>
+									<dl>
+										<dt>옵션 : </dt>
+										<dd>핑크</dd>
+										<dt>수량 : </dt>
+										<dd>1개</dd>
+										<dt>합계 : </dt>
+										<dd>5,500 원</dd>
+									</dl>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 주문자정보 -->
+				<div class="box">
+					<h2 class="boxTitle">02. 주문자정보</h2>
+					<div class="infoTbl">
+						<table>
+							<colgroup>
+								<col style="width:24%;">
+								<col style="width:76%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>보내는 분</th>
+									<td><div>윤동희</div></td>
+								</tr>
+								<tr>
+									<th>휴대폰</th>
+									<td><div>01049291020</div></td>
+								</tr>
+								<tr>
+									<th>이메일</th>
+									<td><div>jungbumtr@naver.com</div></td>
+								</tr>
+								<tr>
+									<th>주소</th>
+									<td><div>서울시 송파구 방이동 158-17</div></td>
+								</tr>
+								<tr>
+									<th>나머지 주소</th>
+									<td><div>3층 301호</div></td>
+								</tr>
+								<tr>
+									<th>요청사항</th>
+									<td><div>좋은상품으로 부탁드립니다 ^^</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 적립포인트 사용 -->
+				<div class="box">
+					<h2 class="boxTitle">03. 적립포인트 사용</h2>
+					<div class="priceInfo">
+						<dl class="finPoint top clearFix">
+							<dt>사용 적립포인트</dt>
+							<dd>
+								<strong>2,000P</strong>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!-- 할인쿠폰적용 -->
+				<div class="box">
+					<h2 class="boxTitle">04. 할인쿠폰적용</h2>
+					<div class="infoTbl priceType">
+						<table>
+							<colgroup>
+								<col style="width:18%;">
+								<col style="width:82%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>사용 쿠폰명</th>
+									<td class="right"><div>가입기념 1000원할인 쿠폰</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 결제금액 -->
+				<div class="box">
+					<h2 class="boxTitle">05. 결제금액</h2>
+					<div class="priceInfo">
+						<dl class="top clearFix">
+							<dt>주문 금액</dt>
+							<dd>
+								<strong>14,900</strong>
+							</dd>
+						</dl>
+						<dl class="bottom clearFix">
+							<dt>배송비</dt>
+							<dd>
+								<strong>+ 0</strong>
+							</dd>
+						</dl>
+						<dl class="bottom clearFix">
+							<dt>쿠폰할인</dt>
+							<dd>
+								<strong>- 1000</strong>
+							</dd>
+						</dl>
+						<dl class="bottom clearFix">
+							<dt>포인트사용</dt>
+							<dd>
+								<strong>- 2000</strong>
+							</dd>
+						</dl>
+						<dl class="finPrice clearFix">
+							<dt>최종 결제금액</dt>
+							<dd>
+								<strong>14,900</strong>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!-- 결제수단 -->
+				<div class="box">
+					<h2 class="boxTitle">06. 결제 수단</h2>
+					<div class="infoTbl priceType">
+						<table>
+							<colgroup>
+								<col style="width:18%;">
+								<col style="width:82%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>신용카드</th>
+									<td class="right"><div>2018.08.18 18:20:20</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 유의사항 -->
+				<div class="box last">
+					<ul class="infoList">
+						<li>* 상품준비중/입금확인 = 주문내역에서 취소가능. </li>
+						<li>* 배송중 = 배송시작단계로 취소 불가능.</li>
+						<li>* 자세한 상담은 고객센터 카카오톡플러스 <span>( ID: 누샵 )</span> 을 이용 해주세요.</li>
+					</ul>
+				</div>
+				<div class="fixBtns">
+					<div class="inner">
+						<a href="javascript:;" class="btn bBlue" onclick="commonPopupOpen('cancelOrder')">취소하기</a>
+					</div>
+				</div>
+			</div>
+			<!-- 상품취소하기 레이어 팝업 -->
+			<article class="popupContent cancelOrder">
+				<div class="dim" onclick="commonPopupClose('cancelOrder')"></div>
+				<div class="contBox">
+					<a href="javascript:;" title="닫기" class="btnClosePopup" onclick="commonPopupClose('cancelOrder')"></a>
+					<header class="header">
+						<h1 class="title">상품 취소하기</h1>
+					</header>
+					<div class="inBox">
+						<p class="txtGuide">취소사유를 입력해주세요.</p>
+						<div class="form">
+							<div class="choiceRow">
+								<select name="" id="">
+									<option value="">취소사유를 선택해주세요.</option>
+									<option value="">-</option>
+								</select>
+							</div>
+							<div class="textareaRow">
+								<textarea name="" id="" placeholder="사유내용을 입력해주세요."></textarea>
+							</div>
+						</div>
+						<div class="btns">
+							<div id="" class="inner">
+								<a href="javascript:;" class="btnDefault bBlue" onclick="commonPopupClose('cancelOrder'); commonPopupOpen('cancelOrderComplete');">취소하기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- 상품 취소하기 완료 레이어 팝업 -->
+			<article class="popupContent cancelOrderComplete">
+				<div class="dim" onclick="commonPopupClose('cancelOrderComplete')"></div>
+				<div class="contBox">
+					<a href="javascript:;" title="닫기" class="btnClosePopup" onclick="commonPopupClose('cancelOrderComplete')"></a>
+					<header class="header">
+						<h1 class="title">상품 취소하기</h1>
+					</header>
+					<div class="inBox">
+						<p class="txtGuide">상품취소가 완료되었습니다.</p>
+						<div class="btns">
+							<a href="javascript:;" class="btnDefault bBlue" onclick="commonPopupClose('cancelOrderComplete');">확인</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+</body>
+</html>	

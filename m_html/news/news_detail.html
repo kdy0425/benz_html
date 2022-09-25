@@ -1,0 +1,103 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">소식 상세</a>
+					<div class="hd_btns">
+						<a href="javascript:;" class="btn heart" onclick="$(this).toggleClass('active')">좋아요</a>
+						<a href="javascript:;" class="btn share" onclick="layerShow('shareBox')">공유하기</a>
+					</div>
+
+						<!-- 공유하기 레이어 -->
+						<div class="popupContent shareBox" style="display:none;">
+							<div class="dim"></div>
+							<div class="share_cnt">
+  								<span class="subject">메르세데스-벤츠 신형 S클래스! 최초 100m 시승기?! 이렇게 멋진 차 누가 타나 했더니! </span>
+								<ul>
+									<li><a href="javascript:;" class="f">페이스북</a></li>
+									<li><a href="javascript:;" class="t">트위터</a></li>
+									<li><a href="javascript:;" class="k">카카오톡</a></li>
+									<li><a href="javascript:;" class="s">문자</a></li>
+									<li><a href="javascript:;" class="l">링크</a></li>
+								</ul>
+							</div>
+							<a href="javascript:;" title="닫기" class="btnClosePopup" onclick="layerHide('shareBox')"></a>
+						</div>
+
+				</div>
+			</header>
+			
+			 <div class="news_detail">
+				<div class="img">
+					<img src="../../m_assets/images/content/news_thum.png" alt="">
+				</div>
+				<div class="bd_cnt">
+					<span class="subject">장점보다 단점이 많다? 벤츠 cls 450 실제 차주의 솔직한 리뷰! 프로모션과 재고현황까지 알려드리겠습니다</span>
+					<div class="info">CLS / 2021.11.30</div>
+					<div class="cnt">메르세데스-벤츠 신형 S클래스, 100m 시승기?!…이렇게 멋진 차 누가 
+					타나 했더니! 너무 타고 싶던 S클래스에 이렇게 앉아보게 되었습니다. 
+					빠르게 보여드리고 싶어서 편집은 간단하게 했어요. 고맙습니다~</div>
+				</div>
+				
+				<hr class="devide_line">
+
+				<div class="news_other">
+					<strong class="title">다른 소식 보기</strong>
+					<ul class="list">
+						<li>
+							<a href="javascript:;">
+								<span class="thum" style="background-image:url('../../m_assets/images/content/news_thum.png');"></span>
+								<div class="cnt">
+									<span class="subject">장점보다 단점이 많다? 벤츠 cls 450 실제 차주의 솔직한 리뷰! 프로모션과 재고현황까지 알려드리겠습니다</span>
+									<div class="info">CLS / 2021.11.30</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="thum" style="background-image:url('../../m_assets/images/content/news_thum.png');"></span>
+								<div class="cnt">
+									<span class="subject">장점보다 단점이 많다? 벤츠 cls 450 실제 차주의 솔직한 리뷰! 프로모션과 재고현황까지 알려드리겠습니다</span>
+									<div class="info">CLS / 2021.11.30</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="thum" style="background-image:url('../../m_assets/images/content/news_thum.png');"></span>
+								<div class="cnt">
+									<span class="subject">장점보다 단점이 많다? 벤츠 cls 450 실제 차주의 솔직한 리뷰! 프로모션과 재고현황까지 알려드리겠습니다</span>
+									<div class="info">CLS / 2021.11.30</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="thum" style="background-image:url('../../m_assets/images/content/news_thum.png');"></span>
+								<div class="cnt">
+									<span class="subject">장점보다 단점이 많다? 벤츠 cls 450 실제 차주의 솔직한 리뷰! 프로모션과 재고현황까지 알려드리겠습니다</span>
+									<div class="info">CLS / 2021.11.30</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			 </div>
+		 </div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	

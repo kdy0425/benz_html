@@ -1,0 +1,56 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">카드관리</a>
+				</div>
+			</header>
+			<div class="mypPage registCard">
+                <div class="inputForm inputName">
+                    <p class="guideTxt">결제 카드를 등록해 주세요.</p>
+                    <div class="cardType clearFix">
+                        <input type="radio" id="cardType01" name="cardType" checked="">
+                        <label for="cardType01">개인카드</label>
+                        <input type="radio" id="cardType02" name="cardType">
+                        <label for="cardType02">법인카드</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="" name="" placeholder="카드명">
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" id="" name="" placeholder="카드번호">
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" id="" name="" placeholder="MM / YY">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="" name="" placeholder="비밀번호 앞 2자리">
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" id="" name="" placeholder="주민번호 앞 6자리 또는 사업자 번호">
+                    </div>
+                </div>
+                <p class="cardSummary">결제신청 시 해당 카도로 자동결제 됩니다.</p>
+                <div class="fixBtns">
+                    <div class="inner">
+						<a href="javascript:;" class="btn bBlue">등록완료</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+</body>
+</html>	

@@ -1,0 +1,74 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+
+	<!-- content -->
+	<header id="header" class="inMember noborder">
+		<div class="inner">
+			<a href="javascript:;" class="btnBack">약관동의</a>
+		</div>
+	</header>
+
+	<div id="content">  
+		<div class="joinPage">
+			<div class="mem_form memberForm step08">
+				<div class="mem_title">벤츠마스터 사용을 위해<br/>아래의 이용동의가 <br/>필요합니다</div>
+				<div class="label_control">
+					<div class="agreeAll">
+						<label class="checkbox all"><input type="checkbox" id="agreeAll" name="agreeAll"><span></span>
+							<strong>전체동의하기</strong>
+							<p>수집된 회원정보는 벤츠마스터 사용을 위한 용도로만 사용됩니다.</p>
+						</label>
+					</div>
+					<script>
+					$(document).on('change', '#agreeAll', function () {
+						if ($(this).is(":checked")) {
+							$('.agreeAll .checkbox').addClass('active');
+						}else{
+							$('.agreeAll .checkbox').removeClass('active');
+						}
+					});
+					</script>
+					<ul class="termList">
+						<li>
+							<a href="javascript:;" class="btnView">서비스 약관 동의</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btnView">개인정보 처리방침 동의</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btnView">개인정보제3자 제공동의</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fixBtns">
+					<div class="inner">
+						<a href="javascript:;" class="btn">다음</a>
+					</div>
+				</div>
+			</div>
+		</div>            
+	</div>
+	<!-- //content -->
+
+</div>
+<!-- //wrap -->
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	
+

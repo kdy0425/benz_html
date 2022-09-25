@@ -1,0 +1,91 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">FAQ</a>
+				</div>
+			</header>
+			
+            <div class="mypPage faqList">
+                <div class="faq">
+                    <ul class="list">
+                        <li>
+                            <a href="javascript:;" class="question">신용카드로 결제했는데 환불은 어떻게 하나요?</a>
+                            <p class="answer">
+                                마이페이지 &gt; 회원정보 수정에 가시면 가입시 등록하셨던 주소를 수정하실 수 있습니다.<br>
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="question">결제하려는데 오류가 납니다.</a>
+                            <p class="answer">
+                                마이페이지 &gt; 회원정보 수정에 가시면 가입시 등록하셨던 주소를 수정하실 수 있습니다.<br>
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="question">배송지 주소를 변경하고 싶습니다.</a>
+                            <p class="answer">
+                                마이페이지 &gt; 회원정보 수정에 가시면 가입시 등록하셨던 주소를 수정하실 수 있습니다.<br>
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="question">회원정보 수정은 어떻게 하나요?</a>
+                            <p class="answer">
+                                마이페이지 &gt; 회원정보 수정에 가시면 가입시 등록하셨던 주소를 수정하실 수 있습니다.<br>
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="question">결제방법에는 어떤 종류가 있나요?</a>
+                            <p class="answer">
+                                마이페이지 &gt; 회원정보 수정에 가시면 가입시 등록하셨던 주소를 수정하실 수 있습니다.<br>
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="question">휴대폰 소액결제도 가능한가요</a>
+                            <p class="answer">
+                                마이페이지 &gt; 회원정보 수정에 가시면 가입시 등록하셨던 주소를 수정하실 수 있습니다.<br>
+                                감사합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="question">무료배송 적용은 얼마 결제해야 가능한가요</a>
+                            <p class="answer">
+                                답변
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+ <script>
+        $(function(){
+            $('.faqList .list .question').on('click', function(){
+                var $thisLi = $(this).closest('li');
+                if($thisLi.hasClass('active')){
+                    $thisLi.removeClass('active');
+                }else{
+                    $thisLi.addClass('active');
+                }
+            });
+        })
+    </script>
+</body>
+</html>	

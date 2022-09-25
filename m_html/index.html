@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>BENZ MASTER</title>
+<script
+src="http://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+<style type="text/css">
+	#guide_wrap {padding:10px;width:1250px;margin:0 auto;}
+	table {border-collapse:collapse;border-spacing:0;}
+	table + table{margin-top:30px;}
+	table caption{text-align:left;padding:10px 0;font-size:20px;font-weight:bold;}
+	table th, strong {font-weight:normal;}
+	h1{
+		margin:0 0 10px 0;
+		text-align:center;
+		font-size:2em;
+		color:#000
+	}
+	a {text-decoration:none;}
+	a:hover {text-decoration:underline;}
+	table {
+		width:100%;
+		margin-top:5px;
+		border-top:2px solid #1e61a8;
+	}
+	table th, table td{
+		padding:5px 7px;
+		border-left:1px solid #ccc; border-bottom:1px solid #ccc;
+	}
+	table th:rowspan + th, table td:rowspan + td{border-left:1px solid #ccc;}
+	td.lineli, th.lineli {border-left:1px solid #ccc !important;}
+	table th:first-child, table td:first-child{border-left:0 none}
+	table thead th {
+		font-family:'ngB';
+		font-size:13px;
+		color:#000;
+		border-bottom:1px solid #ccc;
+		background-color:#f2f2f2;
+	}
+	table td{font-size:13px;}
+	a{color:#444;}
+	.no, .date, .work {
+		text-align:center;
+		padding:5px 0
+	}
+
+	tr.on {background-color: #f5fed0}
+
+	.lastmdate {color: #1155CC;}
+	.stand_by {color:#777;}
+	.ing, .per_2 {color:#4848D4 !important;}
+	.curr_n, .per, .end {color:#ff0000 !important;}
+
+	.division td{border-top:2px solid #7e8e9e}
+	table tr.division:first-child td{border-top:0 none;}
+		.date{display:none;}
+			.ss{background-color:#cff3ef;display:block;padding:3px 5px;}
+</style>
+</head>
+<body>
+<div id="wrap" class="wrap">
+<!-- eniter wrap -->
+<div id="guide_wrap">
+	<div class="header">
+		<h1>BENZ MASTER 사용자 작업목록</h1>
+		<p>진행중 : <span class="ing_n"></span>p / 미완료 : <span class="notcurr_n"></span>p / 완료 : <span class="curr_n"></span>p / 전체 : <span class="total_n"></span>p</p>
+		<p>진행율 : <span class="per_2"></span> / 완료율 : <span class="per"></span></p>
+	</div>
+	<div class="list_w">
+		<table class="codinglist">
+			<caption>사용자 작업 페이지</caption>
+			<colgroup>
+				<col style="width:40px">
+				<col>
+				<col>
+				<col>
+				<col style="width:5%">
+				<col style="width:80px">
+				<col style="width:50px">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th rowspan="2">번호</th>
+					<th colspan="4">네비</th>
+					<th rowspan="2">파일명/링크</th>
+					<th rowspan="2">퍼블상태</th>
+					<th rowspan="2">기타</th>
+				</tr>
+				<tr>
+					<th class="lineli">1depth</th>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="no"></td>
+					<td>인트로</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./main/intro.html" target="_blank">intro.html</a></td>
+					<td class="date">2020-05-14</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>회원가입</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/join.html" target="_blank">join.html</a></td>
+					<td class="date">2020-05-14</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>일반</td>
+					<td>약관동의</td>
+					<td></td>
+					<td class="link"><a href="./member/join0.html" target="_blank">join0.html</a></td>
+					<td class="date">2020-11-30</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>휴대폰번호</td>
+					<td></td>
+					<td class="link"><a href="./member/join1.html" target="_blank">join1.html</a></td>
+					<td class="date">2020-05-14</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>코드입력</td>
+					<td></td>
+					<td class="link"><a href="./member/join2.html" target="_blank">join2.html</a></td>
+					<td class="date">2020-05-14</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>가입폼</td>
+					<td></td>
+					<td class="link"><a href="./member/join3.html" target="_blank">join3.html</a></td>
+					<td class="date">2020-05-14</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>가입완료</td>
+					<td></td>
+					<td class="link"><a href="./member/join4.html" target="_blank">join4.html</a></td>
+					<td class="date">2020-11-30</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>차량정보등록</td>
+					<td></td>
+					<td class="link"><a href="./member/car_info.html" target="_blank">car_info.html</a></td>
+					<td class="date">2020-11-30</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./member/login.html" target="_blank">login.html</a></td>
+					<td class="date">2020-05-14</td>
+					<td class="work"></td>
+					<td class="etc">//</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./main/main.html" target="_blank">main.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>차량소식</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./news/news_list.html" target="_blank">news_list.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./news/news_detail.html" target="_blank">news_detail.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>신차견적의뢰</td>
+					<td>모델선택</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./request/request_model.html" target="_blank">request_model.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>세부 모델 선택</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./request/request_model2.html" target="_blank">request_model2.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>구매 방법 선택</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./request/request_model3.html" target="_blank">request_model3.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>희망회사 선택 </td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./request/request_model4.html" target="_blank">request_model4.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>신청완료 </td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./request/request_model5.html" target="_blank">request_model5.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>중고거래 정보</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./used/used_list.html" target="_blank">used_list.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc">필터레이어</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./used/used_detail.html" target="_blank">used_detail.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>검색</td>
+					<td>최근검색어 인기검색어</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./search/search.html" target="_blank">search.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>검색결과</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./search/search_result.html" target="_blank">search_result.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>상품</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./product/product_list.html" target="_blank">product_list.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./product/product_detail.html" target="_blank">product_detail.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>후기작성</td>
+					<td></td>
+					<td class="link"><a href="./product/product_review_write.html" target="_blank">product_review_write.html</a></td>
+					<td class="date">2020-12-05</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>전체후기</td>
+					<td></td>
+					<td class="link"><a href="./product/product_review.html" target="_blank">product_review.html</a></td>
+					<td class="date">2020-12-05</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품문의</td>
+					<td></td>
+					<td class="link"><a href="./product/product_qna.html" target="_blank">product_qna.html</a></td>
+					<td class="date">2020-12-02</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>브랜드</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./brand/brand_list.html" target="_blank">brand_list.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./brand/brand_detail.html" target="_blank">brand_detail.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>로컬샵</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./shop/shop_list.html" target="_blank">shop_list.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./shop/shop_detail.html" target="_blank">shop_detail.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>장바구니</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./cart/cart.html" target="_blank">cart.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>없음</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./cart/cart2.html" target="_blank">cart2.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>결제</td>
+					<td>폼</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./order/order.html" target="_blank">order.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./order/order_complete.html" target="_blank">order_complete.html</a></td>
+					<td class="date">2020-12-04</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>마이페이지</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/mypage.html" target="_blank">mypage.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>개인정보수정 일반</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/member_modify.html" target="_blank">member_modify.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>개인정보수정 기업</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/member_modify2.html" target="_blank">member_modify2.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>주문 배송 조회</td>
+					<td>주문중인상품</td>
+					<td>리스트</td>
+					<td class="link"><a href="./mypage/order_list.html" target="_blank">order_list.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td class="link"><a href="./mypage/order_detail.html" target="_blank">order_detail.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>배송완료상품</td>
+					<td>리스트</td>
+					<td class="link"><a href="./mypage/order_list2.html" target="_blank">order_list2.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td class="link"><a href="./mypage/order_detail2.html" target="_blank">order_detail2.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>카드내역</td>
+					<td>리스트</td>
+					<td></td>
+					<td class="link"><a href="./mypage/card_list.html" target="_blank">card_list.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>등록</td>
+					<td></td>
+					<td class="link"><a href="./mypage/regist_card.html" target="_blank">regist_card.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>적립금관리</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/point.html" target="_blank">point.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>쿠폰관리</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/coupon.html" target="_blank">coupon.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>고객센터</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/customer_center.html" target="_blank">customer_center.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>공지사항</td>
+					<td>리스트</td>
+					<td></td>
+					<td class="link"><a href="./mypage/notice_list.html" target="_blank">notice_list.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td class="link"><a href="./mypage/notice_detail.html" target="_blank">notice_detail.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>FAQ</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/faq_list.html" target="_blank">faq_list.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>1:1문의하기</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/qna.html" target="_blank">qna.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>회원탈퇴</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/member_leave.html" target="_blank">member_leave.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>설정</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./mypage/setting.html" target="_blank">setting.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>이용약관</td>
+					<td></td>
+					<td class="link"><a href="./mypage/terms.html" target="_blank">terms.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>개인정보취급방침</td>
+					<td></td>
+					<td class="link"><a href="./mypage/privacy.html" target="_blank">privacy.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>최근본상품</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./lastest/lastest_prd.html" target="_blank">lastest_prd.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>최근 본상품없음</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./lastest/lastest_prd2.html" target="_blank">lastest_prd2.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>크리에이터</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./creator/creator_list.html" target="_blank">creator_list.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="./creator/creator_detail.html" target="_blank">creator_detail.html</a></td>
+					<td class="date">2020-12-01</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(function () {
+		$(".tab_menu li a").click(function () {
+			$(".tab_menu li a").removeClass("active");
+			$(this).addClass("active");
+			$(".list_w").hide().removeClass("codinglist")
+			var activeTab = $(this).attr("rel");
+			$("#" + activeTab).fadeIn().addClass("codinglist");
+			chkList();
+		});
+		chkList();
+	});
+
+	function chkList(){
+		var tatal_n = $(".codinglist tbody tr").length;
+		var curr_n = 0;
+		var ing_n = 0;
+		$(".codinglist td.link a").each(function() {
+			$(this).closest('tr').find('.work').text('대기중').addClass('stand_by');
+			if($(this).attr('href') != '#' && $(this).text().length > 0 && $(this).closest('tr').find('.date').text().length > 4){
+				curr_n++;
+				$(this).closest('tr').find('.work').text('완료').addClass('end');
+			} else if ($(this).text().length > 0 && $(this).attr('href') != '#') {
+				ing_n++;
+				$(this).closest('tr').find('.work').text('진행중').addClass('ing');
+			}
+		});
+
+		$(".codinglist tbody tr").each(function() {
+			var index = $(this).index()+1;
+			$(this).children(".codinglist td.no").text(index);
+		});
+
+		$(".codinglist .no + td").each(function() {
+			if($(this).text() != ""){
+				$(this).parent('tr').addClass('division');
+			}
+		});
+
+		$(".codinglist td").click(function() {
+			$(".codinglist tr").removeClass("on");
+			$(this).parent(".codinglist tr").addClass("on");
+		});
+
+		$('.total_n').text(tatal_n);
+		$('.curr_n').text(curr_n);
+		$('.notcurr_n').text(tatal_n - curr_n);
+		$('.ing_n').text(ing_n).addClass('ing');
+		$('.per').text(Math.floor((curr_n/tatal_n)*100) + '%');
+		$('.per_2').text(Math.floor((ing_n/tatal_n)*100) + '%');
+	}
+
+</script>
+</div><!-- //wrap -->
+</body>
+</html>

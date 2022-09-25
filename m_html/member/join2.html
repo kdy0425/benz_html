@@ -1,0 +1,76 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+
+	<!-- content -->
+		<header id="header" class="inMember noborder">
+		<div class="inner">
+			<a href="javascript:;" class="btnBack">이전으로</a>
+		</div>
+	</header>
+	<div id="content">  
+		<div class="joinPage">
+			
+			<div class="mem_form">
+				<div class="mem_title">수신된 메시지에서<br/>인증번호를 확인 후<br/>입력해주세요.</div>
+				<div class="mem_cnt">
+					<div class="mc_item">
+						<div class="certify_num clearfix">
+							<input type="tel" maxlength="1" class="cn_input" data-role="none">
+							<input type="tel" maxlength="1" class="cn_input" data-role="none">
+							<input type="tel" maxlength="1" class="cn_input" data-role="none">
+							<input type="tel" maxlength="1" class="cn_input" data-role="none">
+							<input type="tel" maxlength="1" class="cn_input" data-role="none">
+							<input type="tel" maxlength="1" class="cn_input" data-role="none">
+						</div>
+					</div>
+				</div>
+				<div class="fixBtns">
+					<div class="inner">
+						<a href="javascript:;" class="btn">인증번호 확인하기</a>
+					</div>
+				</div>
+				<div class="fixedCont">
+					<div class="inner clearFix">
+						<a href="javascript:;" class="btnReSend">인증번호 재요청</a>
+						<span class="cntTime">02 : 53</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //content -->
+
+</div>
+<!-- //wrap -->
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+<script>
+$(".certify_num .cn_input").click(function(){
+	var sum = 0;
+	$('.cn_input').each(function(){
+		sum += Number($(this).val());
+	});
+	if (sum == 0) { 
+		$(".certify_num .cn_input").eq(0).focus();
+	}
+});
+ $(".certify_num .cn_input").keyup(function () {
+	if (this.value.length == 0) { 
+		$(this).prev('.cn_input').focus(); 
+	}
+	if (this.value.length == this.maxLength) { 
+		$(this).next('.cn_input').focus(); 
+	} 
+});
+</script>
+</body>
+</html>	

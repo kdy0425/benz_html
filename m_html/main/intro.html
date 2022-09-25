@@ -1,0 +1,36 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body class="intro">
+
+<!-- wrap -->
+<div id="layout" class="intro">
+	
+	<h1 class="intro_logo fade_in"><img src="../../m_assets/images/main/intro1.png" alt="BENZ MASTER"></h1>
+	<h1 class="intro_data fade_in">
+		<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+		<div>
+			<img src="../../m_assets/images/main/intro2.png" alt="데이터다운로드중">
+		</div>
+	</h1>
+	<div class="intro_footer fade_in">
+		<div class="copy">
+			<img src="../../m_assets/images/main/intro3.png" alt="Copyright 2022 BENZ MASTER Insurance Services Co. All Rights Reserved">
+		</div>
+	</div>
+
+</div>
+<!-- //wrap -->
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $('.fade_in').fadeIn(300);
+        }, 300);
+    })
+</script>
+</body>
+</html>	

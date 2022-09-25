@@ -1,0 +1,67 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+
+	<!-- content -->
+	<header id="header" class="inMember noborder">
+		<div class="inner">
+			<a href="javascript:;" class="btnBack">이전으로</a>
+		</div>
+	</header>
+
+	<div id="content">  
+		<div class="joinPage">
+			<div class="mem_form">
+				<div class="mem_title">회원님의 기본정보를<br/>입력해주세요.</div>
+				<div class="mem_cnt type2">
+					<div class="mc_item">
+						<strong class="tit">이름</strong>
+						<div class="ip_group">
+							<input type="text" placeholder="이름을 입력해주세요.">
+						</div>
+					</div>
+
+					<div class="mc_item">
+						<strong class="tit">이메일</strong>
+						<div class="ip_group">
+							<input type="text" placeholder="이메일 주소를 입력해주세요.">
+							<span class="alert">등록 불가</span>
+							<span class="alert cBlue">등록 가능</span>
+						</div>
+					</div>
+
+					<div class="mc_item mgt30">
+						<strong class="tit">비밀번호 설정</strong>
+						<div class="ip_group">
+							<input type="password" placeholder="비밀번호를 입력 ( 영문+숫자 10자이상 )">
+						</div>
+						<div class="ip_group">
+							<input type="password" placeholder="비밀번호를 확인해주세요.">
+							<span class="alert">비밀번호 불일치</span>
+							<span class="alert cBlue">비밀번호 일치</span>
+						</div>
+					</div>
+				</div>
+				<div class="fixBtns">
+					<div class="inner">
+						<a href="javascript:;" class="btn">가입완료</a>
+					</div>
+				</div>
+			</div>
+		</div>            
+	</div>
+	<!-- //content -->
+
+</div>
+<!-- //wrap -->
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	

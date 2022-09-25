@@ -1,0 +1,45 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">카드관리</a>
+				</div>
+			</header>
+			<div class="mypPage card">
+				<h2 class="title">결제 카드목록</h2>
+				<ul class="cardList">
+					<li>
+						<span class="cardName">신한카드</span>
+						<p class="number">개인 **** 2249</p>
+						<button class="btnDelete">삭제</button>
+					</li>
+					<li>
+						<span class="cardName">현대카드</span>
+						<p class="number">개인 **** 2249</p>
+						<button class="btnDelete">삭제</button>
+					</li>
+					<li class="list_empty">등록된 카드가 없습니다.</li>
+				</ul>
+				<a href="javascript:;" class="btnRegist">+ 카드 등록하기</a>
+				<ul class="infoList">
+					<li>- 카드는 최대 5개까지 등록 가능합니다.</li>
+					<li>- 선택하신 카드로 자동 결제되며, 결제가 완료되기<br>전까지 카드 선택 및 변경이 가능합니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+</body>
+</html>	
