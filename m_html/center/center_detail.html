@@ -1,0 +1,226 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	
+	<div id="wrap" class="main">
+        <div id="content">  
+			 <header id="header" class="inMember">
+				<div class="inner">
+					<a href="javascript:;" class="btnBack">업체 정보 상세</a>
+					<div class="hd_btns">
+						<a href="javascript:;" class="btn heart" onclick="$(this).toggleClass('active')">좋아요</a>
+						<a href="javascript:;" class="btn share" onclick="layerShow('shareBox')">공유하기</a>
+					</div>
+
+						<!-- 공유하기 레이어 -->
+						<div class="popupContent shareBox" style="display:none;">
+							<div class="dim"></div>
+							<div class="share_cnt">
+  								<span class="subject">아우토리베</span>
+								<ul>
+									<li><a href="javascript:;" class="f">페이스북</a></li>
+									<li><a href="javascript:;" class="t">트위터</a></li>
+									<li><a href="javascript:;" class="k">카카오톡</a></li>
+									<li><a href="javascript:;" class="s">문자</a></li>
+									<li><a href="javascript:;" class="l">링크</a></li>
+								</ul>
+							</div>
+							<a href="javascript:;" title="닫기" class="btnClosePopup" onclick="layerHide('shareBox')"></a>
+						</div>
+
+				</div>
+			</header>
+			
+			 <div class="center_detail">
+				<div class="img_slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../../m_assets/images/content/center_thum.png" alt=""></div>
+							<div class="swiper-slide"><img src="../../m_assets/images/content/center_thum.png" alt=""></div>
+							<div class="swiper-slide"><img src="../../m_assets/images/content/center_thum.png" alt=""></div>
+							<div class="swiper-slide"><img src="../../m_assets/images/content/center_thum.png" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<script>
+					var swiper = new Swiper('.img_slider .swiper-container', {
+					  pagination: {
+						el: '.img_slider .swiper-pagination',
+						clickable: true,
+						autoHeight: true,
+					  },
+						loop:true,
+					});
+					</script>
+
+				
+				<div class="tap_nav">
+					<ul>
+						<li><a href="javascript:;" class="active">기본정보</a></li>
+						<li><a href="javascript:;">업체평</a></li>
+						<li><a href="javascript:;">위치안내</a></li>
+					</ul>
+				</div>
+				<script>
+				$('.tap_nav a').click(function(){
+					$('.tap_nav a').removeClass('active');
+					$(this).addClass('active');
+					let tap_index = $(this).closest('li').index();
+					$('.tap_wrap .tap_box').hide();
+					$('.tap_wrap .tap_box').eq(tap_index).show();
+				});
+				</script>
+
+				<div class="tap_wrap">
+					
+					<div class="tap_box">
+						<div class="center_info">
+							<div class="lc">거리 <strong>200m</strong></div>
+							<span class="subject">아우토리베</span>
+							<span class="ads">경기도 화성시 동탄산척로2나길 10-4</span>
+							<div class="sharp">
+								<span>#동탄유리막코팅</span>
+								<span>#동탄광택</span>
+								<span>#동탄디테일링세차</span>
+								<span>#동탄스팀세차</span>     
+								<span>#동탄손세차</span>
+							</div>
+							<div class="center_cs">
+								<div class="cs_time">평일 09:00 ~ 23:00 / 토요일 10:00 ~ 13:00 / 일요일, 공휴일 휴무</div>
+								<div class="cs_call">
+									<span class="tit">상담문의</span>
+									<span class="num">02-1234-1234</span>
+								</div>
+							</div>
+						</div>
+
+						<hr class="devide_line">
+
+						<div class="center_box">
+							<div class="title">센터소개</div>
+							<div class="content">최고의 디테일링 프로샵
+							아우토리베 동탄 입니다.<br/>
+							고객님의 차를 제차처럼 항상 신차의 모습으로 최고의 퀄리티를 
+							만들어 드리도록 하겠습니다.<br/>
+							정직과 최상의 서비스만을 약속드립니다.<br/>
+							감사합니다.</div>
+						</div>
+						<div class="center_box">
+							<div class="title">이용종목</div>
+							<div class="content">주차, 발렛파킹, 방문접수/출장, 예약, 무선 인터넷, 남/녀 화장실 구분, 지역화폐(카드형), 지역화폐(모바일형)
+							감사합니다.</div>
+						</div>
+					</div>
+
+					<div class="tap_box" style="display:none;">
+						<div class="rv_new">
+							<div class="dr_top">
+								<strong class="title">해당업체의 회원님의 솔직한 후기를 작성해주세요.</strong>
+								<a href="javascript:;" class="btn">후기 작성하기</a>
+							</div>
+							<div class="dr_total clearfix">
+								<div class="total clearfix">
+									<strong class="tit">총 평점</strong>
+									<div class="star_box clearfix">
+										<span class="star star3_5"></span>
+										<span class="txt">3.5</span>
+									</div>
+								</div>
+								<div class="dr_detail">
+									<div class="item">
+										<span class="tit">전문</span>
+										<span class="star star4_5">4.5</span>
+										<span class="txt">4.5</span>
+									</div>
+									<div class="item">
+										<span class="tit">친절</span>
+										<span class="star star5">5.0</span>
+										<span class="txt">5.5</span>
+									</div>
+									<div class="item">
+										<span class="tit">신속</span>
+										<span class="star star3">3.0</span>
+										<span class="txt">3.0</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="rv_total">후기 <strong>54개</strong></div>
+							<ul class="rv_list">
+								<li>
+									<div class="cnt">
+										<div class="img"><img src="../../m_assets/images/content/rv_img.jpg" alt=""></div>
+										<div class="txt">세차하고 나니 차 도장면 안으로 완전히 들어간 얼룩등도 보이고 문 콕도 세군데나 보여서 마음이 아팠다 ㅠㅠ</div>
+									</div>
+									<div class="star_box clearfix">
+										<div class="item"><span class="tit">전문</span><span class="star">3.5</span></div>
+										<div class="item"><span class="tit">친절</span><span class="star">4.0</span></div>
+										<div class="item"><span class="tit">신문</span><span class="star">5.0</span></div>
+									</div>
+									<div class="info clearfix">
+										<span class="name">윤**님</span>
+										<span class="date">2020. 01. 01</span>
+									</div>
+								</li>
+								<li>
+									<div class="cnt">
+										<div class="txt">세차하고 나니 차 도장면 안으로 완전히 들어간 얼룩등도 보이고 문 콕도 세군데나 보여서 마음이 아팠다 ㅠㅠ</div>
+									</div>
+									<div class="star_box clearfix">
+										<div class="item"><span class="tit">전문</span><span class="star">3.5</span></div>
+										<div class="item"><span class="tit">친절</span><span class="star">4.0</span></div>
+										<div class="item"><span class="tit">신문</span><span class="star">5.0</span></div>
+									</div>
+									<div class="info clearfix">
+										<span class="name">윤**님</span>
+										<span class="date">2020. 01. 01</span>
+									</div>
+								</li>
+								<li>
+									<div class="cnt">
+										<div class="txt">세차하고 나니 차 도장면 안으로 완전히 들어간 얼룩등도 보이고 문 콕도 세군데나 보여서 마음이 아팠다 ㅠㅠ</div>
+									</div>
+									<div class="star_box clearfix">
+										<div class="item"><span class="tit">전문</span><span class="star">3.5</span></div>
+										<div class="item"><span class="tit">친절</span><span class="star">4.0</span></div>
+										<div class="item"><span class="tit">신문</span><span class="star">5.0</span></div>
+									</div>
+									<div class="info clearfix">
+										<span class="name">윤**님</span>
+										<span class="date">2020. 01. 01</span>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:;" class="more_btn">+ 후기 더보기</a>
+						</div>
+					</div>
+
+					<div class="tap_box" style="display:none;">
+						<div class="ct_map">
+							<div class="ads">
+								<span class="tit">주소</span>
+								<span class="cnt">경기 화성시 동탄산척로2나길 10-4</span>
+							</div>
+							<div class="map">
+								<div><img src="../../m_assets/images/content/img_kakao_map_sample.jpg" alt=""></div>
+								<div><img src="../../m_assets/images/content/img_kakao_map_btn.jpg" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			 </div>
+		 </div>
+	</div>
+</div>
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	
