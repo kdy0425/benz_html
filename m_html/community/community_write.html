@@ -1,0 +1,55 @@
+<?
+include_once('../../m_layout/head.html');
+?>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+
+	<!-- content -->
+	<div id="content">
+		<header id="header" class="inMember noborder">
+			<div class="inner">
+				<a href="javascript:;" class="btnBack">게시글 작성</a>
+				<a href="javascript:;" class="btnEtc">등록완료</a>
+			</div>
+		</header>
+		<div class="mypPage inquiry new_write">
+			<div class="formBox">
+				<div class="form_alert">욕설과 문제가있는 게시글은 바로 삭제될 수 있습니다.</div>
+				<div class="row">
+					<select name="" id="">
+						<option value="">구분 선택</option>
+					</select>
+				</div>
+				<div class="row">
+					<select name="" id="">
+						<option value="">지역 선택</option>
+					</select>
+				</div>
+				<div class="row">
+					<input type="text" id="" name="" placeholder="제목을 입력해주세요.">
+				</div>
+				<div class="row">
+					<textarea name="" id="" placeholder="내용을 입력해주세요." data-role="none"></textarea>
+				</div>
+
+				<div class="row file_upload review_photo">
+					<strong class="tit">이미지 첨부 <span class="stit red">*필수항목이 아닙니다.</span></strong>
+					<label class="mf_photo"><input type="file"><span class="photo_box img_upcnt"><img src="" alt="" style="display:none;"></span></label>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- //content -->
+
+</div>
+<!-- //wrap -->
+
+<?
+include_once('../../m_layout/tail.html');
+?>
+
+</body>
+</html>	
