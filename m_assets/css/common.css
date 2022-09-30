@@ -138,7 +138,7 @@ button{cursor:pointer;}
 .txt_bgreen{color:#8edac2 !important;}
 .txt_green{color:#00c63d !important;}
 .txt_blue{color:#2f5ac6 !important;}
-.txt_skyblue{color:#55acee !important;}
+.txt_skyblue{color:#ea150e !important;}
 .txt_orange{color:#ff683f !important;}
 
 .fs_13{font-size:13px !important;}
@@ -211,18 +211,16 @@ label{cursor:pointer;}
 background-repeat:no-repeat;background-position:center center;background-size:16px;
 background-image:url('../images/common/check_type1.png');}
 .checkbox input[type="checkbox"]{position:absolute;left:-999em;top:0;}
-.checkbox input[type="checkbox"]:checked + span{background-color:#ea150e;background-image:url('../images/common/check_type3.png');}
+.checkbox input[type="checkbox"]:checked + span{background-image:url('../images/common/check_type3.png');}
 .checkbox.type2 input[type="checkbox"]:checked + span{background-color:#000;background-image:url('../images/common/check_type1_on.png');}
 .checkbox.type2 input[type="checkbox"]:checked + span + strong{color:#000;}
 
 .radiobox{display:inline-block;padding-left:25px;min-height:18px;line-height:18px;position:relative;font-size:14px;color:#333;}
-.radiobox span{width:18px;height:18px;position:absolute;left:0;top:0;background-color:#fff;border:1px solid #d0d0d0;border-radius:50%;}
-.radiobox span:before{content:"";display:block;width:8px;height:8px;position:absolute;left:50%;top:50%;margin-top:-4px;margin-left:-4px;border-radius:50%;background-color:#F4F4F4;}
 .radiobox input[type="radio"]{position:absolute;left:-999em;top:0;}
-.radiobox input[type="radio"]:checked + span{background-color:#485fab;border:1px solid #485fab;}
-.radiobox input[type="radio"]:checked + span:before{background-color:#fff;}
-
-
+.radiobox span{width:16px;height:16px;position:absolute;left:0;top:2px;background-color:#fff;border-radius:50%;
+background-repeat:no-repeat;background-position:center center;background-size:16px;
+background-image:url('../images/common/radio_type1.png');}
+.radiobox input[type="radio"]:checked + span{background-image:url('../images/common/radio_type1_active.png');opacity:1;}
 
 .rl_all_check .ec_radio{}
 .rl_all_check .ec_radio.active{color:#37bac2;}

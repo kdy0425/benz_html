@@ -6,150 +6,227 @@ include_once('../../m_layout/head.html');
 <!-- wrap -->
 <div id="layout">
 	
-	<div id="wrap" class="main">
+	<div id="wrap" class="sub">
         <div id="content">  
-			<header id="header" class="inMember">
-				<div class="inner">
-					<a href="javascript:;" class="btnBack">패션/뷰티</a>
-					<a href="javascript:;" class="hd_cart"><span class="count">3</span></a>
+			<div class="sub_header">
+				<h2>물품구매</h2>
+				<span class="stit">벤츠 마스터만의 특별한 제품을 만나보세요 </span>
+				<a href="javascript:;" class="sh_home">홈으로</a>
+			</div>
+
+			<div class="prd_slider img_slider">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="../../m_assets/images/content/prd_slider_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="../../m_assets/images/content/prd_slider_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="../../m_assets/images/content/prd_slider_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="../../m_assets/images/content/prd_slider_thum.png" alt=""></div>
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
-			</header>
+			</div>
+			<script>
+				var swiper = new Swiper('.img_slider .swiper-container', {
+				  pagination: {
+					el: '.img_slider .swiper-pagination',
+					clickable: true,
+					autoHeight: true,
+				  },
+					loop:true,
+				});
+				</script>
 
-			<div class="ms_tap_btn list">
-				<ul>
-					<li><a href="javascript:;" class="active">전체보기</a></li>
-					<li><a href="javascript:;">의류</a></li>
-					<li><a href="javascript:;">반려동물</a></li>
-					<li><a href="javascript:;">문구</a></li>
-					<li><a href="javascript:;">생활</a></li>
-					<li><a href="javascript:;">주방</a></li>
-					<li><a href="javascript:;">가구</a></li>
-					<li><a href="javascript:;">홈테크</a></li>
-				</ul>
+			<div class="list_title container">전체물품</div>
+			<div class="ms_cnt">
+				<div class="ms_tap_btn container">
+					<ul>
+						<li><a href="javascript:;" class="active">전체</a></li>
+						<li><a href="javascript:;">공구중</a></li>
+						<li><a href="javascript:;">특별할인가</a></li>
+						<li><a href="javascript:;">구매필수품</a></li>
+						<li><a href="javascript:;">인테리어</a></li>
+						<li><a href="javascript:;">차량용품</a></li>
+						<li><a href="javascript:;">카테고리1</a></li>
+						<li><a href="javascript:;">카테고리2</a></li>
+					</ul>
+				</div>
+				<div class="ms_tap_box list container">
+					<div class="ms_tap_box">
+						<div class="ms_tbox"><!-- 전체 -->
+							<div class="main_items">
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">차량용 고급 목쿠션 헤드 레스트 스웨이드 제품스웨이드 제품</span>
+										<span class="content">고급스러움 주의!! 타쇼핑몰 제품과는 ‘다른 제품입니다 구매평으로 먼저 ‘다른 제품입니다 구매평으로 먼저</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">차량용 고급 목쿠션 헤드 레스트 스웨이드 제품스웨이드 제품</span>
+										<span class="content">고급스러움 주의!! 타쇼핑몰 제품과는 ‘다른 제품입니다 구매평으로 먼저 ‘다른 제품입니다 구매평으로 먼저</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">차량용 고급 목쿠션 헤드 레스트 스웨이드 제품스웨이드 제품</span>
+										<span class="content">고급스러움 주의!! 타쇼핑몰 제품과는 ‘다른 제품입니다 구매평으로 먼저 ‘다른 제품입니다 구매평으로 먼저</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">차량용 고급 목쿠션 헤드 레스트 스웨이드 제품스웨이드 제품</span>
+										<span class="content">고급스러움 주의!! 타쇼핑몰 제품과는 ‘다른 제품입니다 구매평으로 먼저 ‘다른 제품입니다 구매평으로 먼저</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					
+						<div class="ms_tbox" style="display:none;"><!-- 공구중 -->
+							<div class="main_items">
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">공구중2222222공구중2222222공구중2222222</span>
+										<span class="content">공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">공구중2222222공구중2222222공구중2222222</span>
+										<span class="content">공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+							
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">공구중2222222공구중2222222공구중2222222</span>
+										<span class="content">공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="item">
+									<a href="javascript:;">
+										<span class="thum" style="background-image:url('../../m_assets/images/main/main_item.jpg')"></span>
+										<span class="subject">공구중2222222공구중2222222공구중2222222</span>
+										<span class="content">공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222공구중2222222</span>
+										<div class="info">
+											<span class="star"><strong>4.3</strong> (26)</span>
+											<div class="prc">
+												<!-- 정상가 --><span>55,000</span>
+												<!-- 할인가 --><strong>55,000</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="ms_tbox" style="display:none;"><!-- 특별할인가 -->
+							특별할인가
+						</div>
+						<div class="ms_tbox" style="display:none;"><!-- 구매필수품 -->
+							구매필수품
+						</div>
+						<div class="ms_tbox" style="display:none;"><!-- 인테리어 -->
+							인테리어
+						</div>
+						<div class="ms_tbox" style="display:none;"><!-- 차량용품 -->
+							차량용품
+						</div>
+						<div class="ms_tbox" style="display:none;"><!-- 카테고리1 -->
+							카테고리1
+						</div>
+						<div class="ms_tbox" style="display:none;"><!-- 카테고리2 -->
+							카테고리2
+						</div>
+						<script>
+						let main_items_count = 0;
+						$('.main_items').each(function(){
+							main_items_count++;
+							$(this).addClass('main_items' + main_items_count);
+							let cls = '.main_items' + main_items_count;
+
+							var swiper = new Swiper(cls + ' .swiper-container', {
+								observer: true,
+								observeParents: true,
+								autoHeight: true,
+							  pagination: {
+								el: cls + ' .swiper-pagination',
+								clickable: true,
+							  },
+							});
+						});
+						
+						</script>
+					</div>
+				</div>
 			</div>
 
-            <div class="programPage">
-                <div class="listCont">
-                    <div class="programList">
-                        <div class="clearFix">
-							<p class="listInfo">총 <strong class="cnt">58개</strong></p>
-
-							<select name="" id="" class="sort_option" data-role="none">
-								<option value="">최신제품순</option>
-							</select>
-                        </div>
-                        <ul class="product_list list">
-							<li>
-								<a href="#">
-									<span class="thum" style="background-image:url('../../m_assets/images/content/prd_thum2.png');"></span>
-									<div class="cnt">
-										<span class="prd_logo" style="background-image:url('../../m_assets/images/content/prd_logo1.png');"></span>
-										<span class="subject">Brick M/Desert Beige</span>
-										<span class="star"><strong>4.3</strong> (26)</span>
-										<div class="price clearfix">
-											<span class="sale">10%</span>
-											<div class="prc">
-												<!-- 정상가 --><span>55,000</span>
-												<!-- 할인가 --><strong>55,000</strong>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="thum" style="background-image:url('../../m_assets/images/content/prd_thum2.png');"></span>
-									<div class="cnt">
-										<span class="prd_logo" style="background-image:url('../../m_assets/images/content/prd_logo1.png');"></span>
-										<span class="subject">Brick M/Desert Beige</span>
-										<span class="star"><strong>4.3</strong> (26)</span>
-										<div class="price clearfix">
-											<span class="sale">10%</span>
-											<div class="prc">
-												<!-- 정상가 --><span>55,000</span>
-												<!-- 할인가 --><strong>55,000</strong>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<span class="thum" style="background-image:url('../../m_assets/images/content/prd_thum2.png');"></span>
-									<div class="cnt">
-										<span class="prd_logo" style="background-image:url('../../m_assets/images/content/prd_logo1.png');"></span>
-										<span class="subject">Brick M/Desert Beige</span>
-										<span class="star"><strong>4.3</strong> (26)</span>
-										<div class="price clearfix">
-											<span class="sale">10%</span>
-											<div class="prc">
-												<!-- 정상가 --><span>55,000</span>
-												<!-- 할인가 --><strong>55,000</strong>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<span class="thum" style="background-image:url('../../m_assets/images/content/prd_thum2.png');"></span>
-									<div class="cnt">
-										<span class="prd_logo" style="background-image:url('../../m_assets/images/content/prd_logo1.png');"></span>
-										<span class="subject">Brick M/Desert Beige</span>
-										<span class="star"><strong>4.3</strong> (26)</span>
-										<div class="price clearfix">
-											<span class="sale">10%</span>
-											<div class="prc">
-												<!-- 정상가 --><span>55,000</span>
-												<!-- 할인가 --><strong>55,000</strong>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<span class="thum" style="background-image:url('../../m_assets/images/content/prd_thum2.png');"></span>
-									<div class="cnt">
-										<span class="prd_logo" style="background-image:url('../../m_assets/images/content/prd_logo1.png');"></span>
-										<span class="subject">Brick M/Desert Beige</span>
-										<span class="star"><strong>4.3</strong> (26)</span>
-										<div class="price clearfix">
-											<span class="sale">10%</span>
-											<div class="prc">
-												<!-- 정상가 --><span>55,000</span>
-												<!-- 할인가 --><strong>55,000</strong>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="thum" style="background-image:url('../../m_assets/images/content/prd_thum2.png');"></span>
-									<div class="cnt">
-										<span class="prd_logo" style="background-image:url('../../m_assets/images/content/prd_logo1.png');"></span>
-										<span class="subject">Brick M/Desert Beige</span>
-										<span class="star"><strong>4.3</strong> (26)</span>
-										<div class="price clearfix">
-											<span class="sale">10%</span>
-											<div class="prc">
-												<!-- 정상가 --><span>55,000</span>
-												<!-- 할인가 --><strong>55,000</strong>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-
-						</ul>
-                    </div>
-                </div>
-
-			</div>
+			<script>
+				$('.ms_tap_btn a').click(function(){
+					var btnindex = $(this).closest('li').index();
+					
+					$(this).closest('ul').find('a').removeClass('active');
+					$(this).addClass('active');
+					$(this).closest('.ms_cnt').find('.ms_tap_box .ms_tbox').hide();
+					$(this).closest('.ms_cnt').find('.ms_tap_box .ms_tbox').eq(btnindex).show();
+					
+				});
+			</script>
 			
 		</div>
 	</div>

@@ -13,7 +13,19 @@ $(document).on('change', '.label_control input[type="checkbox"]', function () {
 	}
 });
 
-
+$(document).on('change', '.label_control input[type="checkbox"]', function () {
+	if($(this).closest('label').hasClass('check_all') ){
+		if ($(this).is(":checked")) {
+			$(this).closest('.label_control').find('input[type="checkbox"]').prop("checked", true);
+		} else {
+			$(this).closest('.label_control').find('input[type="checkbox"]').prop("checked", false);
+		}
+	}else{
+		if (!$(this).is(":checked")) {
+			$(this).closest('.label_control').find('.check_all input[type="checkbox"]').prop("checked", false);
+		}
+	}
+});
 
 $("label.ec_radio.all").bind("click", function() {
 	if ($(this).hasClass('black')) {
